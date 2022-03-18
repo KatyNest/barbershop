@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Barbershop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">   
+    <link rel="stylesheet" type="text/css" href="css/style.min.css"/>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-main" data-bs-offset="119">
+<header>
+    <nav id="navbar-main" class="navbar navbar-expand-lg fixed-top">
+        <div class="container header">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-start" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="#about">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#prices">Цены</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#crew">Команда</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#booking">Записаться</a></li>
+                </ul>
+            </div>
+            <div class="social-media d-none d-lg-block d-xl-block">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="logo">
+        <a class="logo__link" href="#"><img class="logo__img" src="img/logo.svg" alt="" /></a>
+    </div>
+    <div class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12">
+                    <div class="contacts__item">
+                        <p><span>Часы работы</span><br />
+                            по будням с 10:00 до 22:00<br />
+                            по выходным с 12:00 до 22:00
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="contacts__item">
+                        <p><span>Телефон</span><br />
+                            <span class="phone">+7 905 900 0000</span><br />
+                            <span>для бронирования</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-12">
+                    <div class="contacts__item">
+                        <p><span>Адрес</span><br />
+                            635095, Нововсибисрк, <br />
+                            ул. Церюльников, 5
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="about">
+    <div class="container-fluid m-0 p-0">
+        <div class="row m-0 p-0">
+            <div class="col-lg-6 col-12 m-0 p-0 about__img">
+                <img class="about__banner lazy" data-src="img/welcome1.png" alt="" />
+                <img class="about__banner2 lazy" data-src="img/welcome2.png" alt="" />
+            </div>
+            <div class="col-lg-6 col-12 m-0 p-0">
+                <div class="about__content" id="about">
+                    <h2>О нас</h2>
+                    <div class="subtitle">Добро пожаловать в <strong>Barber</strong> - лучший барбершоп города Великий Гусляр</div>
+                    <div class="about__text">
+                        <p>Barber - это не просто место, где можно отдохнуть от городской суеты Великого Гусляра и привести в порядок
+                            прическу перед важной встречей. Это территория настоящего стиля, брутальной мужской атмосферы.
+                            Здесь ценятся старинные традиции и модные тенденции, классические приемы и современные технологии.
+                            А мастерство старой школы и кинематографическое освещение создают колорит, который все привыкли видеть в фильмах.современные технологии.
+                            А мастерство старой школы и кинематографическое освещение создают колорит, который все привыкли видеть в фильмах.</p>
+                    </div>
+                    <div class="about__text collapse" id="about-text">
+                        <p>Barber - это не просто место, где можно отдохнуть от городской суеты Новосибирска и привести в порядок
+                            прическу перед важной встречей. Это территория настоящего стиля, брутальной мужской атмосферы.
+                            Здесь ценятся старинные традиции и модные тенденции, классические приемы и современные технологии.
+                        </p>
+                    </div>
+                    <a href="#" class="btn"  data-bs-toggle="collapse"  data-bs-target="#about-text" id="about-more">Развернуть</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="services lazy" id="services" data-src="img/banner-services.png">
+    <div class="container-fluid">
+        <h2>Наши услуги</h2>
+        <div class="subtitle services-subtitle">Barber предоставляет<br /> высококвалифицированные услугие такие как</div>
+        <div class="row services-slider">
+            <div class="col-lg-3 col-12 services-item haircut">
+                <div class="services-item__title">Мужская Стрижка</div>
+                <div class="services-item__description">Прически для мужчин имеют великое многообразие. Выбрав подходящую стрижку, каждый может отразить свой образ жизни и характер.</div>
+            </div>
+            <div class="col-lg-3 col-12 services-item trimming">
+                <div class="services-item__title">Тримминг</div>
+                <div class="services-item__description">
+                    Борода и усы для мужчины важная особенность издревле.За ними нужен особый уход. Мы предлагаем стрижку усов и бороды, оформление.</div>
+            </div>
+            <div class="col-lg-3 col-12 services-item shaving">
+                <div class="services-item__title">Бритье</div>
+                <div class="services-item__description">Это самы настоящий ритуал с сохранением традиций наших предков. Неспешность и аккуратность делает его настоящим релаксом для эстетов</div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="prices" id="prices">
+    <div class="container-fluid m-0 p-0">
+        <div class="row m-0 p-0">
+            <div class="col-lg-5 col-12 m-0 p-0">
+                <div class="prices__content">
+                    <h2>Цены</h2>
+                    <div class="prices-block">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td class="prices-block__title">Мужская стрижка</td>
+                                    <td class="prices-block__value">1000 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td class="prices-block__title">Мужская стрижка + борода</td>
+                                    <td class="prices-block__value">1400 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td class="prices-block__title">Стрижка бороды</td>
+                                    <td class="prices-block__value">от 300 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td class="prices-block__title">Детская стрижка (до 14 лет)</td>
+                                    <td class="prices-block__value">800 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td class="prices-block__title">Оформление бороды машинкой</td>
+                                    <td class="prices-block__value">400-500 ₽</td>
+                                </tr>
+                                <tr>
+                                    <td class="prices-block__title">Оформление бороды с бритьем </td>
+                                    <td class="prices-block__value">600 ₽</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                        <table class="collapse" id="pricelist">
+                            <tbody>
+                            <tr>
+                                <td class="prices-block__title">Отец и сын</td>
+                                <td class="prices-block__value">1700/2500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="prices-block__title">Под машинку</td>
+                                <td class="prices-block__value">от 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="prices-block__title">Окантовка</td>
+                                <td class="prices-block__value">от 300 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="prices-block__title">Укладка и мытье головы</td>
+                                <td class="prices-block__value">500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td class="prices-block__title">Камуфлирование</td>
+                                <td class="prices-block__value">300 ₽</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="#" class="btn" data-bs-toggle="collapse" data-bs-target="#pricelist" id="price-more">Еще</a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-12 m-0 p-0 d-none d-lg-block d-xl-block price-banner">
+                <img class="prices__img-big lazy" data-src="img/prices-banner.png" alt="" />
+                <img class="prices__img-small lazy" data-src="img/prices2.png" alt="" />
+            </div>
+        </div>
+    </div>
+</section>
+<section class="team lazy" id="crew" data-src="img/banner-team.png">
+    <div class="container-fluid">
+        <h2>Наша команда</h2>
+        <div class="subtitle team-subtitle">В Barber работают настоящие профи,
+            которые обожают свое дело</div>
+        <div class="row team-slider">
+            <div class="col-lg-4 col-12 team-item">
+                <div>
+                    <div class="team-item__img"><img class="lazy" data-src="img/team1.png" alt="" /> </div>
+                    <div class="team-item__name">Степан</div>
+                    <div class="team-item__position">Топ барбер</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 team-item">
+                <div>
+                    <div class="team-item__img"><img class="lazy" data-src="img/team2.png" alt="" /> </div>
+                    <div class="team-item__name">Фёдор</div>
+                    <div class="team-item__position">Барбер</div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 team-item">
+                <div>
+                    <div class="team-item__img"><img class="lazy" data-src="img/team3.png" alt="" /> </div>
+                    <div class="team-item__name">Олег</div>
+                    <div class="team-item__position">Барбер</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer lazy" data-src="img/banner-bottom.png">
+    <div class="footer__booking" id="booking">
+        <h2>Записаться</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Имя" />
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Телефон" />
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                    <textarea class="form-control" placeholder="Комментарий"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Записаться</button>
+        </form>
+    </div>
+</footer>
+<script type="text/javascript" src="js/main.min.js"></script>
+</body>
+
+
+
+</html>

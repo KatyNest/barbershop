@@ -1,0 +1,141 @@
+header {
+ background: url(../img/banner.png) no-repeat top center;
+}
+.header {padding: 0}
+.container {max-width: 1830px}
+.navbar {
+    max-width: 1920px;
+    background: rgba(27,27,27,0.25);
+    &-toggler {
+      background-color: @background-beige;
+      border-radius: 0;
+      /* position: absolute;
+      top:0;
+      left: 0;*/
+      z-index: 500;
+      width: 70px;
+      height: 70px;
+      &:focus {
+        box-shadow: none;
+      }
+      &-icon {
+        background: url("../img/icon-menu.svg") no-repeat;
+        width: 50px;
+        height: 45px;
+      }
+    }
+  }    
+.nav {
+  &-item {
+  margin: 0;
+  &:first-child {margin-left: 0}
+  }
+  &-link {
+    text-transform: uppercase;
+    font-weight: 700;
+    color:@text-white;
+    padding:1.3rem 2.3rem;
+    &:hover {color: @text-beige}
+    &.active {background: @background-beige; color: @text-black}
+    }
+  }
+.social-media { 
+  font-size: 25px;
+  position: absolute;
+  z-index: 200;
+  top:61px; right: 15px;
+  i { color: @text-beige; margin: 0 10px;
+    &:hover {color: #f7f7f7}}
+  }
+.logo {
+    max-width: 444px; margin:0 auto 172px; padding-top: 252px; position: relative;
+    &:before {content:url("../img/dots-blured.svg"); position: absolute; top:184px; left: -210px}
+    &__img { width: 100%;}
+  }
+
+.contacts {
+  .col-md-4 {
+      border:1px solid @background-beige;
+    }
+  &__item {
+    padding: 35px 0 22px;
+    p {
+      text-align: center;
+      color:@text-white;
+      text-transform: uppercase;
+      font-weight: 700;
+      line-height: 30px;
+      span {
+        color:@text-beige;
+        &.phone {color:@text-white; font-size: 32px  }
+        }
+      }
+    }    
+  }
+
+
+@media screen and (min-width: 320px) {
+  header {
+    padding-bottom: 43px;
+  }
+  .navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+   }  
+  .nav {
+    display: block;
+    background-color: @background-beige;
+    position: relative;
+    padding-bottom: 20px;
+    width: 100%;
+    &-item {
+      text-align: left;
+    }
+    &-link {
+      padding:1.3rem 20px;
+      &:hover {color: @text-black}
+    }
+  }
+  .logo {margin:0 15px 102px; padding-top: 100px}
+  .contacts {width:90%; margin: 0 5%}
+  
+}
+@media screen and (min-width: 480px) {
+  .logo {
+      margin: 0 auto 34px;
+   }
+
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  header {
+    padding-bottom: 48px;
+    }
+  .navbar {
+    padding-top: 2.9rem;
+    padding-bottom: 2.5rem;
+   }  
+  .nav {
+    display: flex;
+    background:none;
+    top:auto;
+    width: auto;
+    padding-bottom: 0;
+    &-item {
+      text-align: center;
+    }
+    &-link {
+      padding:1.3rem 2.3rem;
+      &:hover {color: @text-beige}
+      &.active {background: @background-beige; color: @text-black}
+    }
+  }
+  .logo {margin:0 auto 172px;}
+  
+}
+
